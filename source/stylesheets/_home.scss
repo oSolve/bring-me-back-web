@@ -16,28 +16,17 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-size: 18px;
-  height: 100%;
+  min-height: 100%;
   @include font-smoothing(antialiased);
 }
 
 
 main.home {
-  height: 100%;
+  padding-top: 80px;
   @extend .container;
 
-  .row {
-    height: 100%;
-  }
-
   .left-col {
-    height: 100%;
-    position: relative;
-  }
 
-  .left-col-inner {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
 
