@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><%= current_page.data.title || "Bring Me Back" %></title>
+  <meta name="description" content="An iOS application to remember here and Bring You Back" />
+  <link rel="canonical" href="http://bring-me-back.dev/" />
+  <meta property="og:title" content="Bring Me Back - Never Forget Where You Came From." />
+  <meta property="og:description" content="An iOS application to remember here and Bring You Back" />
+  <meta property="og:url" content="http://bring-me-back.dev/" />
+  <meta property="og:site_name" content="Bring me back" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link href="//fonts.googleapis.com/css?family=Sonsie One&subset=latin" rel="stylesheet" type="text/css">
+  <link href='//fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+  <%= stylesheet_link_tag "all", "all" %>
+  <link rel="stylesheet" media="screen" href="/assets/application-f63fe7029e761a894908519debbd5492.css?body=1" />
+</head>
+<body>
+  <%= yield %>
+
+  <%= javascript_include_tag  "all" %>
+</html>
