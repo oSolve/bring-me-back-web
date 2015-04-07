@@ -22,10 +22,22 @@ body {
 
 
 main.home {
-  padding-top: 80px;
+  height: 100%;
   @extend .container;
 
-  .left-col, .right-col {
+  .row {
+    height: 100%;
+  }
+
+  .left-col {
+    position: relative;
+    height: 100%;
+  }
+
+  .left-col-inner {
+    position: absolute;
+    top: 50%;
+    margin-top: -(300px/2 + 100px);
   }
 
 
