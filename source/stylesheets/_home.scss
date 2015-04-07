@@ -29,7 +29,7 @@ main.home {
     height: 100%;
   }
 
-  .left-col {
+  .left-col, .right-col {
     position: relative;
     height: 100%;
   }
@@ -79,12 +79,14 @@ main.home {
   }
 
   .hand {
-    position: fixed;
-    bottom: 0;
-    background: url(image-path("hand@2x.png"))  no-repeat center center;
-    background-size: 476px 614px;
-    width: 476px;
-    height: 614px;
+    position: absolute;
+    top: 50%;
+    margin-top: -(619px/2);
+
+    background: url(image-path("iphone6.png"))  no-repeat center center;
+    background-size: 518px 619px;
+    width: 518px;
+    height: 619px;
   }
 
 }
