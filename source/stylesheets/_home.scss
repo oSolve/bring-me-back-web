@@ -30,14 +30,13 @@ main.home {
   }
 
   .left-col, .right-col {
-    position: relative;
     height: 100%;
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(center);
   }
 
   .left-col-inner {
-    position: absolute;
-    top: 50%;
-    margin-top: -(300px/2 + 100px);
   }
 
 
@@ -79,10 +78,6 @@ main.home {
   }
 
   .hand {
-    position: absolute;
-    top: 50%;
-    margin-top: -(619px/2);
-
     background: url(image-path("iphone6.png"))  no-repeat center center;
     background-size: 518px 619px;
     width: 518px;
