@@ -10,14 +10,28 @@ html {
 }
 
 body {
-  background: url(image-path("bg.jpg")) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   font-size: 18px;
   height: 100%;
   @include font-smoothing(antialiased);
+}
+
+#scene {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+
+  .background {
+    margin-left: -5%;
+    margin-top: -5%;
+    width: 110%;
+    height: 110%;
+    background: url(image-path("bg.jpg")) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 }
 
 
